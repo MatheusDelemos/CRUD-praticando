@@ -1,15 +1,14 @@
 import java.util.Date;
 
-public class cadastroCliente {
+public class CadastroCliente {
 
     private String nome;
     private String sobrenome;
     private String email;
     private Date dataNascimento;
-    private int senha;
+    private String senha;
 
-
-    public cadastroCliente(String nome, String sobrenome, String email, Date dataNascimento, int senha) {
+    public CadastroCliente(String nome, String sobrenome, String email, Date dataNascimento, String senha) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
@@ -19,13 +18,11 @@ public class cadastroCliente {
 
     public String getNome() {
         return nome;
-
     }
 
-    public void setnome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
-
 
     public String getSobrenome() {
         return sobrenome;
@@ -51,11 +48,11 @@ public class cadastroCliente {
         this.dataNascimento = dataNascimento;
     }
 
-    public int getSenha() {
+    public String getSenha() {
         return senha;
     }
 
-    public void setSenha(int senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 }
